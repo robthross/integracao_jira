@@ -20,7 +20,7 @@ jobs:
         uses: atlassian/gajira-create@v3
         with:
             project: "RTECHTH"
-            issuetype: "Build"
+            issuetype: Epic
             summary: "Build completa para ${{ github.repository }}"
 
       - name: Transição da issue
