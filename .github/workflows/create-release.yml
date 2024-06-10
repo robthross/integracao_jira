@@ -4,7 +4,7 @@ run-name: "Jira Release Action | triggered by @${{ github.actor }}"
 on:
   push:
     branches:
-      - 'release/**'
+      - 'release'
 
 jobs:
   jira-release:
