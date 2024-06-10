@@ -18,6 +18,10 @@ jobs:
       - name: Criar nova issue
         id: create
         uses: atlassian/gajira-create@v3
+        with:
+            project: "RTECHTH"
+            issuetype: "Build"
+            summary: "Build completa para ${{ github.repository }}"
 
       - name: Transição da issue
         uses: atlassian/gajira-transition@v3
